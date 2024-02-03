@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .button{
-                text-align: right;
-            }
-        </style>
-    </head>
-    <body>
-        <h1 style="text-align: center;">MY NOTES </h1>
-        <form>
-            <label for="Title">Title:</label>
-            <input type="text" id="Title">
-        </form>
-        <br>
-        <label for="Description">Description:</label>
-        <textarea id="Description" name="Description" rows="10" columns="10"></textarea>
-        <br>
-        <button type="button">Add note</button>
-        <br>
-        <textarea id="title" name="title" rows="10" columns="10">Title</textarea>
-        <textarea id="title" name="title" rows="10" columns="10">Title</textarea>
-        <textarea id="title" name="title" rows="10" columns="10">Title</textarea>
 
-        
-    </body>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">MY NOTES </h1>
+    <form id="inputForm">
+        <div id="titleContainer">
+            <label id="lblTitle" for="titleInput">Title:</label>
+            <input type="text" id="titleInput">
+        </div>
+        <div id="descriptionContainer">
+            <label id="lblDescription" for="descriptionInput">Description:</label>
+            <textarea id="descriptionInput" name="Description" rows="10" columns="10"></textarea>
+        </div>
+        <div id="btnContainer">
+            <button id="btnAddNote" type="button">Add note</button>
+        </div>
+    </form>
+
+
+
+    <!-- <textarea id="title" name="title" rows="10" columns="10">Title</textarea>
+        <textarea id="title" name="title" rows="10" columns="10">Title</textarea>
+        <textarea id="title" name="title" rows="10" columns="10">Title</textarea> -->
+
+
+</body>
+
 </html>
